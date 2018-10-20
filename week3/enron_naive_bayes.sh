@@ -25,7 +25,7 @@ fi
 # if the file doesn't exist, download from the web
 if ! [ -e enron1.tar.gz ]
     then
-    curl -O 'http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz'
+    curl -O -L 'http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz'
 fi
 
 # if the directory doesn't exist, uncompress the .tar.gz
